@@ -1,282 +1,534 @@
-<html>
- <head>
-    <!--<link type="text/css" rel="stylesheet" href="https://www.dropbox.com/s/trsldt0me90jzs8/resume.css"/>!-->
+<html lang="en">
+<head>
+
+    <!--<script src="https://use.fontawesome.com/59a8f26532.js"></script>-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranali Kolamkar | SQA Engineer</title>
+    <link href="https://fonts.googleapis.com/css?family=Artifika|Open+Sans" rel="stylesheet">
+    <!--<link rel="stylesheet" href="styles.css">-->
+
     <style type="text/css">
-        
-        div
-    {
-    border-radius: 5px;
-    }
-#header
-{
-    position: fixed;
-    z-index: 1;
-    height:50px;
-    width: 98%;
-    background-color: #668284;
-    margin-bottom: 10px
-    }
+    /* Global Styles */
 
-#name {
-    float:left;
-    margin-left: 10px;
-    padding-bottom: 10px;
-    font-size: 16px;
-    font-family: Verdana, sans-serif;
-    color: #ffffff;
+html {
+  box-sizing: border-box;
 }
 
-#email{
-    float:right;
-    margin-right: 20px;
-    padding-bottom: 10px;
-    font-size: 16px;
-    font-family: Verdana, sans-serif;
-    color: #ffffff;
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
 
-#contact
-{
-    margin-left:45%;
-    padding-bottom: 10px;
-    font-size: 16px;
-    font-family: Verdana, sans-serif;
-    color: #ffffff;
-    }
+a {
+  color: #EF233c;
+}
 
 a:hover {
-    font-weight: bold;
+  text-decoration: none;
 }
 
-.right
-{
-    float: left;
-    margin-top: 50px;
-    padding-left:5px;
-    /*margin-right: -10px;
-    margin-left: 14%;*/
-    height: auto;
-    width: 99%;
-    background-color: #E3EDD8;
-    }
+h1, h2 {
+  font-family: 'Artifika', serif;
+  font-weight: 400;
+}
 
-/*.left
-{
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 25px;
+  margin-top: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: hidden;;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.justified {
+  text-align: justify;
+}
+
+/*.btn {
+  text-decoration: none;
+  background: #EF2336;
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+}
+
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}*/
+
+
+/* Header Styles and footer
+====================*/
+header, footer {
+  background-color: #2B2D42;
+  color: #8D99AE;
+}
+
+/* Header styles  */
+
+header {
+  padding-top: 50px;
+  position: relative;
+}
+
+nav {
+  text-align: center;
+  background-color: #fff;
+  position: fixed; /* if you dont set a width for a positioned element, it will only be as wide as its content*/
+  top: 0;
+  width: 100%;  /*Can also be achieved by setting left: 0 and right:0 */
+  /*left: 0;
+  right: 0;*/
+}
+
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+
+}
+
+header h1, header h2 {
+  color: #EDF2F4;
+  margin: 0;
+}
+
+.profile-img {
+  border-radius: 50%;
+}
+
+
+/* Footer styles */
+footer {
+  text-align: center;
+}
+
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+
+
+/* Education Styles
+====================*/
+/*.education {
+  background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
+                              url(http://freelinkedinbackgrounds.com/wp-content/uploads/2015/01/Technology-008.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}*/
+
+p + h3 {
+  margin-top: 30px;
+}
+
+/* Work Experience Styles
+====================*/
+
+.work,.work1 {
+  background-color: #EDF2F4
+}
+
+h3 ~ p {
+  margin: 0;
+}
+
+.job-description p:first-of-type {
+  margin-top: 0;
+}
+
+.job-decription {
+  margin-bottom: 25px;
+}
+
+/* Media Querie */
+@media (min-width: 900px) {
+  .col-narrow {
+    width: 35%;
     float: left;
-    margin-top: 50px;
-    /*margin-right: -90px;
-    height: relative;
-    width: 10%;
-    background-color: #4160E8;
-    }*/
-    
-#footer
-{
-    height:50px;
-    clear:both;
-    position: relative;
-    background-color: #C1E3E1;
+  }
+
+  .col-wide {
+    width: 62%;
+    float: right;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width:899px) {
+  header {
     text-align: center;
+  }
+  .profile-img {
+    width: 200px;    
+  }
+}
 
-    }
-#social
-{
-    padding: 10px;
-}   
-h3
-{
-    text-decoration: underline;
-    }
-
-#job-responsibilities
-{
-    padding: 1px;
-    }
-.job-title
-{
-    font-weight: bold;
-    }
-table
-{
-    border: 1px dashed black;
-    }
-td
-{
-    padding: 2px;
-    border: 1px solid #E88741;
-    }
-
-#course-name
-{
-    font-weight:bold;
-    }
-
-#company-name
-{
-    height:2px;
-    text-decoration:underline;
-    }
-#job-title
-{
-    height: 5px;
-    }
-.job-duration
-{
-    float:right;
-    }
-#heading
-{
-    font-weight:bold;
-    }
     </style>
-<title></title> 
 </head>
 <body>
-<div id="header">
-<p id="name">Ashok R. Dhengale</p>
-         <a href="mailto:douknowashok@gmail.com" target="_blank"><p id="email">douknowashok@gmail.com</p></a>
-     </div>
-     <div class="left">
-     </div>
-     <div class="right">
-            <h3>Objective</h3>
-            <p>
-            <ul>To become a successful professional in the field of Information Technology by utilizing my skills and enable further personal and professional development and work towards the prosperity of the organization.</ul>
-            </p>
-            <h3>Professional Experience</h3>
-            <h4 id="company-name">Vincalabs Infotech Pvt. Ltd.</h4>
-            <p id="job-title"><strong>Intern</strong></p>
-            <p id="job-responsibilities">January 2019 - Present</p>
-            <p>
-            <ul>
-                <li>Software Testing.</li>
-                <!--<li>Interact with our engineering team to get software issues and bugs resolved.</li>
-                <li>Occasionally interact with customers over Skype or telephone.</li>
-                <li>Contribute ideas to the team on how customers can be delighted.</li>-->
-             </ul>
-            </p>
-            <h4 id="company-name">Aryan Tech India Pvt. Ltd.</h4>
-            <p id="job-title"><strong>Network Engineer (Technical Support)</strong></p>
-            <p id="job-responsibilities">June 2016 - Dec 2018</p>
-            <p>
-            <ul>
-                <li>Provide Networking teaining to students and Professional.</li>
-                <li>Interact with our students team to get network issues and bugs resolved.</li>
-                <li>Occasionally interact with students over Skype or telephone.</li>
-                <li>Setup all network lab</li></ul>
-            </p>
-            <h4 id="company-name">AppSoft Solutions</h4>
-            <p id="job-title"><strong>Affiliate Marketing</strong></p>
-            <p id="job-responsibilities">Feb 20014 - March 2016</p>
-            <p>
-            <ul>
-                <li>Provide Affiliate Marketing teaining to customer.</li>
-                <li>Answer customer queries over email / ticketing system.</li>
-                <li>Interact with our engineering team to get customer issues and bugs resolved.</li>
-                <li>Occasionally interact with customers over Skype or telephone.</li>
-                <li>Contribute ideas to the team on how customers can be delighted.</li></ul>
-            </p>
-            <h3>Educational Qualifications</h3>
-            <table>
-                <tr id="heading">
-                    <td>Qualification</td>
-                    <td>Board</td>
-                    <td>Percentage / Grades</td>
-                    <td>Year</td>
-                </tr>
-                <tr>
-                    <td>S.S.C</td>
-                    <td>Maharashtra Board</td>
-                    <td>55.57%</td>
-                    <td>2005</td>
-                </tr>
-                <tr>
-                    <td>H.S.C (Science Stream)</td>
-                    <td>Maharashtra Board</td>
-                    <td>50.40%</td>
-                    <td>2007</td>
-                </tr>
-                <tr>
-                    <td>B.E (IT)</td>
-                    <td>Pune University</td>
-                    <td>A Grade</td>
-                    <td>2013</td>
-                </tr>
-            </table>
-            <h3>Independent Courses</h3>
-            <p>
-            <ul>
-                <li>
-                <span id="course-name">HTML & CSS for Beginners – Web Fundamentals</span> – w3school.com</li>
-                <li>
-                <span id="course-name">Java – Fundamentals and Dynamic Programming </span> - w3school.com</li>
-                <li>
-                <span id="course-name">JavaScript – Programming Basics, JS Apps and Build Games </span> - w3school.com</li>
-                <!--<li>
-                <span id="course-name">CCNA(Cisco Certified Network Associate)</span> - Networking Lab, Pune</li>
-                <li>
-                <span id="course-name">MCSA Server-2012(Microsoft Certified Solutions Associate)</span> – Networking Lab, Pune</li>
-                <li>
-                <span id="course-name">Calculus One</span> - Ohio State University & Coursera.org</li>
-                <li>
-                <span id="course-name">Introduction to Finance</span> - Coursera.org & University of Michigan</li>-->
-            </ul>
-            <h3>Technical Skills</h3>
-            <p>
-            <ul>
-                <li>
-                <span id="course-name">Operating Systems : </span> DOS, Windows 7,Windows 8,Windows 7,Windows 10, Macintosh Computers (OS X), Linux (Ubuntu, Fedora).</li>
-                <li>
-                <span id="course-name">Application Software : </span> Office 97-2003; Office XP, Office 2007, Office for Mac 2011.</li>
-                <li>
-                <span id="course-name">Programming Skills : </span>HTML, CSS, Java, JavaScript, learning Python.</li></ul>
-            </p>
-            <h3>Certifications / Awards </h3>
-            <p>
-            <ul>
-                <li>
-                <span id="course-name">CCNA(Cisco Certified Network Associate)</span> - Networking Lab, Pune</li>
-                <li>
-                <span id="course-name">MCSA Server-2012(Microsoft Certified Solutions Associate)</span> – Networking Lab, Pune</li></ul>
-            </p>
-            <h3>Personal Information</h3>
-            <p>
-            <ul>
-                <li>
-                <span id="course-name">Name : </span>Ashok Ramchandra Dhengale.</li>
-                <li>
-                <span id="course-name">Aadhar Name : </span>1234 1234 1234 1234</li>
-                <li>
-                <span id="course-name">Mobile No : </span>+91-0579206677   /     +91-0579206668</li>
-                <li>
-                <span id="course-name">Email Id : </span>douknowashok@gmail.com</li>
-                <li>
-                <span id="course-name">Alt Email Id : </span>ashokadhengale@gmail.com</li>
-                <li>
-                <span id="course-name">Languages Known: </span>English, Hindi and Marathi.</li>
-                <li>
-                <span id="course-name">Hobbies : </span>Surfing Internet, self-learning through e-courses.</li> </ul>
-            </p>
-            <h3>Other Information</h3>
-            <p>
-            <ul>
-                <li>
-                <span id="course-name">Expected Salary : </span>As per company standards.</li>
-                <li>
-                <span id="course-name">Area of Interest : </span>Software Testing, Software Development, Programming, Start-ups, Coding, App Development.</li>
-                <li>
-                <span id="course-name">Joining Date : </span>Immediate.</li></ul>
-            </p>
-            <h3>Declaration</h3>
-            <p>
-            I hereby declare that the details furnished above are true and correct to the best of my knowledge and belief.</p>
-     </div>
-     <div id="footer">
-            <div id="social">
-                <a href="https://www.facebook.com/a9579206677" target="_blank"> <img src="facebook_img.jpg" height="30px" width="30px"> </a>
-                <a href="mailto:douknowashok@gmail.com" target="_blank"><img src="gmail_logo.jpg" height="30px" width="30px"></a>
-                <a href="https://www.linkedin.com/in/ashok-dhengale-79ab79a0/" target="_blank"><img src="LinkedIn-Icon.jpg" height="30px" width="30px"></a>
+    <!-- // Intro -->
+    <header id="about">
+      <!--Putting the download link before the navbar make it appear below the navbar on the page stack  -->
+      <!--<a class="btn download" href="#" download>Download PDF</a>-->
+      <nav>
+        <a href="#about" title="">About</a>
+        <a href="#work" title="">Work Experience</a>
+        <a href="#TechnicalP" title="">Technical Profile</a>
+        <a href="#Education" title="">Education</a>
+        <a href="#work1" title="">Personal Deatils</a>
+        <a href="#AWARDS" title="">AWARDS</a>
+        <a href="#contact" title="">Contact</a>
+      </nav>
+      <div class="content-wrap">
+        <img class="profile-img col-narrow" src="http://www.trishaomabu.com/wp-content/uploads/2018/05/profileImg.jpg">
+        <!-- Use a square profile image to get max effect of 50% border radius -->
+        <div class="col-wide">
+        <h1>Pranali P. Kolamkar.</h1>
+        <h2>  SQA Engineer  </h2>
+        <p>3.2 years of experience in Software Testing (Automation) and Quality Assurance of Enterprise Products, GUI and product based applications.</p>
+        <p>Knowledge of Amazon EC2 and AWS components (EC2, Security Groups, Route 53, VPC).</p>
+        <p>Excellent in Functional, Integration, Regression and System Testing.</p>
+        <p>Strong in Test Planning, Test Design, Test Execution, Defect reporting & Tracking and building Test Environment.</p>
+        <p>Good knowledge of Jenkins.</p>
+        <p>Good exposure in  SDLC and STLC.</p>
+        <p>Good understanding of Windows and Web applications.</p>
+        <p>Strong team player to find defects in Software application against Requirement Specification.</p>
+        <p>Self-motivated, energetic and highly ethical in all work related assignments thus able to immediately contribute to corporate goals and objects.</p>
+        <!--<h2>Objectives</h2>
+        <p>I am a diligent, hardworking and a sincere person with a never ending urge to learn new things. With the right kind of attitude and perseverance I am determined to carve a successful and satisfying career in the field of Information Technology</p>-->
+        </div>
+      </div>
+    </header>
+
+    <main>
+        <!-- // Work Experience -->
+        <section id="work" class="work">
+          <div class="content-wrap">
+
+            <h2>Work Experience</h2>
+
+            <!-- Job Details: copy this whole block to add more jobs -->
+            <div class="col-narrow">
+              <h3>SQA Engineer</h3>
+              <p class="uppercase">Pubmatic</p>
+              <p>Feb 2018 to present</p>
             </div>
-     </div>
-    </body>
+            <div class="col-wide job-description">
+
+            <!-- Add as many paragraphs as you need. -->
+            <p class="justified">
+                <p style="text-decoration: underline;">PROJECT 1 : UAS (Unified AdServer)</p>
+                Description : This Project included User Interface automation of UAS
+            </p>
+
+            <!-- This list can be deleted if you don't want to use it. -->
+            <p>Key Deliverables : </p>
+            <ul>
+                <li>Achieved 80% Automation using Selenium with Python.</li>
+                <li>Preparation of test cases.</li>
+                <li>Setting up test environment.</li>
+                <li>Reporting defects in defect tracking tool JIRA.</li>
+                <li>Involved in Build Acceptance, Functional, Integration.</li>
+                <li>Was actively involved with developers to clarify and resolve defect issues.</li>
+           </ul>
+
+           <p class="justified">
+                <p style="text-decoration: underline;">PROJECT 2 : AS (Ad Server)</p>
+                Description : Project included backend automation of AS
+            </p>
+
+            <!-- This list can be deleted if you don't want to use it. -->
+            <p>Key Deliverables : </p>
+            <ul>
+                <li>Achieved 70 % Automation using Selenium with Python.</li>
+                <li>Preparation of test cases.</li>
+                <li>Setting up test environment in Linux environment.</li>
+                <li>Reporting defects in defect tracking tool JIRA.</li>
+                <li>Involved in Build Acceptance, Functional, Integration.</li>
+                <li>Was actively involved with developers to clarify and resolve defect issues.</li>
+                <li>Executed test cases for functional, validation, end-to-end and regression testing.</li>
+           </ul>
+
+            </div>
+
+
+            <!-- end of Job Details block. -->
+            </div>
+
+        </section>
+        <section id="work" class="work">
+          <div class="content-wrap">
+
+           <!-- <h2>Work Experience</h2>-->
+
+            <!-- Job Details: copy this whole block to add more jobs -->
+            <div class="col-narrow">
+              <h3>SQA Engineer</h3>
+              <p class="uppercase">Symantec</p>
+              <p>Feb 2016 to Jan 2018</p>
+            </div>
+            <div class="col-wide job-description">
+
+            <!-- Add as many paragraphs as you need. -->
+            <p class="justified">
+                <p style="text-decoration: underline;">PROJECT 1 : PCM (Public Cloud Migration)</p>
+                Description : This Project included all the Email Security Components to be migrated to AWS
+            </p>
+
+            <!-- This list can be deleted if you don't want to use it. -->
+            <p>Key Deliverables : </p>
+            <ul>
+                <li>Being an in house initiative, was Involved in the entire Email Security Product Automation Project.</li>
+                <li>Achieved 80% automation using Selenium with Python.</li>
+                <li>Test case execution (Automation testing).</li>
+                <li>User interface BPP (Business Platform & Portal) Automation.</li>
+                <li>Backend ESS (Email security services) Automation.</li>
+                <li>Test data creation.</li>
+                <li>Setting up test environment in cloud.</li>
+                <li>Involved in Agile Methodology.</li>
+                <li>Reporting the defect in JIRA defect tracking tool.</li>
+                <li>Created multiple instances in Public cloud using Deployment Automation.</li>
+                <li>Updating test cases based on Change Requests/Enhancements.</li>
+                <li>Executed test cases for functional ,validation ,end-to-end and regression testing  on cloud.</li>
+            </ul>
+
+           <p class="justified">
+                <p style="text-decoration: underline;">PROJECT 2 : Business Platform & Portal Customer Response Team (CRT)</p>
+                Description : This Project included all the UI-Portal related Customers Escalations
+            </p>
+
+            <!-- This list can be deleted if you don't want to use it. -->
+            <p>Key Deliverables : </p>
+            <ul>
+                <li>Actively Participated  in Live Releases  and Support.</li>
+                <li>OOL (Out Of Load) testing.</li>
+                <li>Responsible to verify Web Services API requests, response data validation in SOAP protocol.</li>
+                <li>Regression and Functional Testing.</li>
+                <li>Sanity test cases execution.</li>
+                <li>Build installations (Portal UI and API’s) and Build Acceptance as per requirements.</li>
+                <li>Was actively involved with developers to clarify and resolve issues in minimal time.</li>
+                <li>Handled Customer Escalations.</li>
+                <li>Logged bugs in defect tracking tool E-Track.</li>
+                <li>Analyzed application and errors, escalatedissues to developers and verified fixes.</li>
+                <li>Analyze programs and software using analysis programs to identify threats.</li>
+                <li>Developed  test summary reports for upper management.</li>
+           </ul>
+           
+            </div>
+
+
+            <!-- end of Job Details block. -->
+            </div>
+
+        </section>
+
+
+        <header id="TechnicalP">
+      <!--Putting the download link before the navbar make it appear below the navbar on the page stack  -->
+      <!--<a class="btn download" href="#" download>Download PDF</a>-->
+      <nav>
+        <a href="#about" title="">About</a>
+        <a href="#work" title="">Work Experience</a>
+        <a href="#TechnicalP" title="">Technical Profile</a>
+        <a href="#Education" title="">Education</a>
+        <a href="#work1" title="">Personal Deatils</a>
+        <a href="#AWARDS" title="">AWARDS</a>
+        <a href="#contact" title="">Contact</a>
+      </nav>
+      <div class="content-wrap">
+       <!-- <img class="profile-img col-narrow" src="http://www.trishaomabu.com/wp-content/uploads/2018/05/profileImg.jpg">-->
+        <!-- Use a square profile image to get max effect of 50% border radius -->
+        <!--<div class="col-wide">-->
+        <!--<h1>Pranali P. Kolamkar.</h1>-->
+        <h2>Technical Profile</h2>
+        <p><strong> Automation Tools : </strong> Selenium with Python using Robot Framework,
+         Selenium with Java using TestNG</p>
+        <p><strong> Languages  : </strong> Java, Python and C++</p>
+        <p><strong> Database  : </strong> SQL Server 2008 and SQL Server 2012</p>
+        <p><strong> Operating System : </strong> Windows, Linux</p>
+        <p><strong> Web Technology : </strong>HTML5,CSS3</p>
+        <p><strong> Test Management Tools : </strong> Toro, JIRA</p>
+        <p><strong> Testing Methodology : </strong> Agile, V-model</p>
+        <p><strong> Defect Management Tool : </strong>E-Track, JIRA</p>
+        
+        <!--<h2>Objectives</h2>
+        <p>I am a diligent, hardworking and a sincere person with a never ending urge to learn new things. With the right kind of attitude and perseverance I am determined to carve a successful and satisfying career in the field of Information Technology</p>-->
+        </div>
+      </div>
+    </header>
+
+
+        <!-- // Education -->
+        <section id="Education" class="Education">
+          <div class="content-wrap">
+
+            <h2>Education</h2>
+
+            <!-- School details: copy this whole block to add more schools. -->
+            <h3>Master of Computer Applications</h3>
+            <p>From Pune University,Maharashtra with Distinction in 2016</p>
+
+            <!-- Add as many paragraphs as you need. -->
+            <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie purus a neque feugiat aliquam. Donec cursus, lacus non condimentum rutrum, velit tortor pretium neque, vitae finibus felis dolor ut neque.</p>
+            <p><a href="https://www.freecodecamp.org/trishachi" title="Free Code Camp Profile" target="_blank">View Profile</a></p>-->
+            <!-- End of school details. -->
+
+            <!-- School details: copy this whole block to add more schools. -->
+            <h3>BCS (Comp.Sci)</h3>
+            <p>From Pune University,Maharashtra with Distinction in 2013</p>
+
+            <!-- Add as many paragraphs as you need. -->
+            <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie purus a neque feugiat aliquam. Donec cursus, lacus non condimentum rutrum, velit tortor pretium neque, vitae finibus felis dolor ut neque.</p>-->
+            <!-- End of school details. -->
+            </div>
+        </section>
+
+
+
+        <header id="work1">
+      <!--Putting the download link before the navbar make it appear below the navbar on the page stack  -->
+      <!--<a class="btn download" href="#" download>Download PDF</a>-->
+      <nav>
+        <a href="#about" title="">About</a>
+        <a href="#work" title="">Work Experience</a>
+        <a href="#TechnicalP" title="">Technical Profile</a>
+        <a href="#Education" title="">Education</a>
+        <a href="#work1" title="">Personal Deatils</a>
+        <a href="#AWARDS" title="">AWARDS</a>
+        <a href="#contact" title="">Contact</a>
+      </nav>
+      <div class="content-wrap">
+       <!-- <img class="profile-img col-narrow" src="http://www.trishaomabu.com/wp-content/uploads/2018/05/profileImg.jpg">-->
+        <!-- Use a square profile image to get max effect of 50% border radius -->
+        <!--<div class="col-wide">-->
+        <!--<h1>Personal Deatils</h1>-->
+        <h2>Personal Deatils</h2>
+        <p><strong> Name : </strong>Pranali P. Kolamkar.</p>
+        <p><strong> Mob No : </strong>+91-8446810599  /  +91-8087243597</p>
+        <p><strong> Email-Id : </strong><a href="mailto:pranalikolamkar6677@gmail.com">pranalikolamkar6677@gmail.com</a></p>
+        <p><strong> Date of Birth : </strong>03rd May 1992</p>
+        <p><strong> Permanent Address : </strong>Sr No: 37, Rukmni Nivas, Plot No-115, Janseva society, Lane No-6, Near Gajanan Mahraj Mandir, Kalepadal, Hadapsar Pune-28.</p>
+        <p><strong> Gender, Marital Status : </strong>Female,Married</p>
+        <p><strong> Verbal Language Skills : </strong>English, Hindi, Marathi</p>
+        
+        <!--<h2>Objectives</h2>
+        <p>I am a diligent, hardworking and a sincere person with a never ending urge to learn new things. With the right kind of attitude and perseverance I am determined to carve a successful and satisfying career in the field of Information Technology</p>-->
+        </div>
+      </div>
+    </header>
+
+
+
+        <!-- // Work Experience -->
+       <!-- <section id="work1" class="work1">
+          <div class="content-wrap">
+
+            <h2>Personal Deatils</h2>
+
+            <!-- Job Details: copy this whole block to add more jobs --
+            <div class="col-narrow">
+              <!--<h3>Web Designer/Developer</h3>--
+              <p class="uppercase"></p>
+              <!--<p>January 2014 - December 2017</p>--
+            </div>
+            <div class="col-wide job-description">
+
+            <!-- Add as many paragraphs as you need. --
+            <p class="justified"></p>
+
+            <!-- This list can be deleted if you don't want to use it. --
+            <!--<p>Optional list:</p>--
+            <p><strong> Name : </strong>Pranali P. Kolamkar.</p>
+            <p><strong> Mob No : </strong>+91-8446810599  /  +91-8087243597</p>
+            <p><strong> Email-Id : </strong>pranalikolamkar6677@gmail.com</p>
+            <p><strong> Date of Birth : </strong>03rd May 1992</p>
+            <p><strong> Permanent Address : </strong>Sr No: 37, Rukmni Nivas, Plot No-115, Janseva society, Lane No-6, Near Gajanan Mahraj Mandir, Kalepadal, Hadapsar Pune-28.</p>
+            <p><strong> Gender,Marital Status : </strong>Female,Married</p>
+            <P><strong> Verbal Language Skills : </strong>English,Hindi,Marathi</P>
+            <!--<ul>
+                <li>Date of Birth : 03rd May 1992</li>
+                <li>Permanent Address : SrNo: 37, Rukmni Nivas, Plot No-115,Janseva society, Near Gajanan Mahraj Mandir, Kalepadal,Hadapsar Pune-28.</li>
+                <li>Gender,Marital Status : Female,Married</li>
+                <li>Verbal Language Skills : English,Hindi,Marathi</li>
+                <li>Hobbies : Travelling,Playing Chess</li>
+            </ul>--
+            </div>
+            <!-- end of Job Details block. --
+            </div>
+        </section>-->
+
+        <!-- // Education -->
+        <section id="AWARDS" class="AWARDS">
+          <div class="content-wrap">
+
+            <h2>AWARDS AND ACHIEVEMENTS</h2>
+
+            <!-- School details: copy this whole block to add more schools. -->
+            <h3>Level 2 Awards for Progress Beyond Expectations</h3>
+            
+
+            <!-- Add as many paragraphs as you need. -->
+            <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie purus a neque feugiat aliquam. Donec cursus, lacus non condimentum rutrum, velit tortor pretium neque, vitae finibus felis dolor ut neque.</p>
+            <p><a href="https://www.freecodecamp.org/trishachi" title="Free Code Camp Profile" target="_blank">View Profile</a></p>-->
+            <!-- End of school details. -->
+
+            <!-- School details: copy this whole block to add more schools. -->
+            <h3>Level 1 Awards for Collaboration and Team Work</h3>
+            
+
+            <!-- Add as many paragraphs as you need. -->
+            <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie purus a neque feugiat aliquam. Donec cursus, lacus non condimentum rutrum, velit tortor pretium neque, vitae finibus felis dolor ut neque.</p>-->
+            <!-- End of school details. -->
+            </div>
+        </section>
+    </main>
+
+    <!-- // Footer & contact info -->
+    <footer id="contact">
+      <div class="content-wrap">
+        <h2>Let's Keep in Touch!</h2>
+        <!-- Social media and contact links. Add or remove any networks. -->
+        <div class="contact-info">
+
+            <a href="mailto:pranalikolamkar6677@gmail.com">Email</a>
+            <a href="https://www.facebook.com/Pranalikolamkar3" target="_blank">Facebook</a>
+            <a href="https://www.linkedin.com/in/pranali-kolamkar-28a42a126/" target="_blank">Linkedin</a>
+
+           <!-- <a href="http://www.trishaomabu.com" target="_blank"><i class="fa fa-globe fa-lg" aria-hidden="true"></i>
+<span class="sr-only">Website</span></a>
+            <a href="mailto:chisombili.okoye@gmail.com"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+<span class="sr-only">Email</span></a>
+            <a href="https://twitter.com/trishachi" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+<span class="sr-only">Twitter</span></a>
+            <a href="https://www.linkedin.com/in/chisom-trisha-okoye/" target="_blank"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+<span class="sr-only">LinkedIn</span></a>
+            <a href="https://github.com/Trishachi" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i>
+<span class="sr-only">Github</span></a>-->
+        </div>
+        <!--<p>Copyright &copy; 2018 by Chisom Trisha Okoye</p>-->
+        </div>
+    </footer>
+</body>
 </html>
